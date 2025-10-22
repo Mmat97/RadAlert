@@ -4,9 +4,12 @@
 through a dual-branch late-fusion model, enabling context-aware reasoning between patient history and tumor morphology.
 It outputs the **probability of malignancy**, where values **above 0.5 indicate a high likelihood of breast cancer**, providing interpretable, data-driven clinical insight.
 
+Breast cancer is more structured because both its imaging and clinical data follow strict global standards and repeatable formats, making it far easier for AI to learn from and integrate than most other cancers.
+
 RadAlert is intended for medical AI researchers, data scientists, and clinicians interested in exploring or developing multimodal breast cancer detection models that integrate MRI imaging and EHR data for interpretable, probability-based predictions.
 
 The EHR data gives RadAlert extra “context” about the person — things like age, tumor size, and prior history — while the MRI images show what the tumor physically looks like. When RadAlert fuses them, it doesn’t just look at pictures; it learns to connect what it sees in the MRI with what it knows from the patient’s record — for example, if a certain tumor pattern plus certain clinical traits usually mean cancer, it becomes more confident (the output probability > 0.5). So, the EHR branch teaches the model why something might be cancer, and the MRI branch shows where and how it appears — together they make the prediction smarter and more accurate.
+
 
 ---
 
