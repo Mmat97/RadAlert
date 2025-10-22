@@ -22,6 +22,25 @@ This enables **deeper, context-aware reasoning** between patient history and tum
 | 🩻 **MRI Branch** | DICOM MRI scans | Spatial and morphological cues | Visual embedding |
 | 🔗 **Fusion Layer** | Concatenated embeddings | Cross-modality reasoning | Malignancy probability |
 
+
+
+
+
+## 🧬 Dataset Source
+
+The datasets used in this project are derived from the  
+**[Duke-Breast-Cancer-MRI Collection (The Cancer Imaging Archive - TCIA)](https://www.cancerimagingarchive.net/collection/duke-breast-cancer-mri/)**.  
+
+This dataset includes:
+- Dynamic-contrast-enhanced breast MRI scans (DICOM format)  
+- Clinical metadata containing lesion characteristics and diagnostic labels  
+
+EHR-like features (e.g., tumor size, recurrence history, and demographics) were extracted from the accompanying metadata and merged with MRI image-derived features by **Patient ID** to enable cross-modal learning.
+
+
+
+
+
 ---
 
 ## 📂 Files
