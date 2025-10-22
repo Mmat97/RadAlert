@@ -6,9 +6,11 @@ It outputs the **probability of malignancy**, where values **above 0.5 indicate 
 
 RadAlert is intended for medical AI researchers, data scientists, and clinicians interested in exploring or developing multimodal breast cancer detection models that integrate MRI imaging and EHR data for interpretable, probability-based predictions.
 
+The EHR data gives RadAlert extra “context” about the person — things like age, tumor size, and prior history — while the MRI images show what the tumor physically looks like. When RadAlert fuses them, it doesn’t just look at pictures; it learns to connect what it sees in the MRI with what it knows from the patient’s record — for example, if a certain tumor pattern plus certain clinical traits usually mean cancer, it becomes more confident (the output probability > 0.5). So, the EHR branch teaches the model why something might be cancer, and the MRI branch shows where and how it appears — together they make the prediction smarter and more accurate.
+
 ---
 
-## 🚀 Features
+##  Features
 - **Dual-Branch Fusion:** Independent EHR and MRI encoders fused through a learnable layer.  
 - **Context-Aware Predictions:** Integrates patient-level context with tumor visual cues.  
 - **Automatic Model Loading:** Detects and loads full model or state_dict automatically.  
@@ -17,12 +19,12 @@ RadAlert is intended for medical AI researchers, data scientists, and clinicians
 
 ---
 
-## 🧠 Model Overview
+##  Model Overview
 | Branch | Input | Focus | Output |
 |--------|--------|--------|--------|
-| 🧬 **EHR Branch** | Clinical metadata (e.g., tumor size, demographics) | Health patterns | Clinical embedding |
-| 🩻 **MRI Branch** | DICOM MRI scans | Spatial and morphological cues | Visual embedding |
-| 🔗 **Fusion Layer** | Concatenated embeddings | Cross-modality reasoning | Malignancy probability |
+|  **EHR Branch** | Clinical metadata (e.g., tumor size, demographics) | Health patterns | Clinical embedding |
+|  **MRI Branch** | DICOM MRI scans | Spatial and morphological cues | Visual embedding |
+|  **Fusion Layer** | Concatenated embeddings | Cross-modality reasoning | Malignancy probability |
 
 
 
@@ -45,7 +47,7 @@ EHR-like features (e.g., tumor size, recurrence history, and demographics) were 
 
 ---
 
-## 📂 Files
+##  Files
 RadAlert_Main3.ipynb → Main notebook (training + inference)
 radalert_mri_fusion.pth → Saved model weights (full model or state_dict)
 fastMRI_breast_IDS_001_150_DCM.tar → MRI dataset (DICOM)
