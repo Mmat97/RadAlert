@@ -1,8 +1,8 @@
 # 🩻 RadAlert: EHR + MRI Fusion for Context-Aware Breast Cancer Detection
 
-**RadAlert** is a **unique multimodal deep learning system** that predicts breast MRI malignancy by combining **radiological imaging data** with **electronic health record (EHR)** features.  
-Unlike standard multimodal models, RadAlert uses a **dual-branch late-fusion design**—one branch for structured EHR data and another for imaging features—allowing each to learn independently before merging.  
-This enables **deeper, context-aware reasoning** between patient history and tumor morphology for more interpretable cancer detection and recurrence prediction.
+**RadAlert** is a **multimodal deep learning system** that uniquely fuses **breast MRI imaging** and **EHR data** through a dual-branch late-fusion model, enabling context-aware reasoning between patient history and tumor morphology.
+It outputs the **probability of malignancy**, where values **above 0.5 indicate a high likelihood of breast cancer**, providing interpretable, data-driven clinical insight.
+
 
 ---
 
