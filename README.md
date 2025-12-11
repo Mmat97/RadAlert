@@ -57,6 +57,12 @@ fastMRI_breast_IDS_001_150_DCM.tar → MRI dataset (DICOM)
 fastMRI_breast_labels.xlsx → EHR + ground truth labels
 Sample_SCREENSHOT.png → Example output visualization
 
+---
+
+## 📚 Glossary
+
+For detailed explanations of technical terms, acronyms, and concepts used in this project, see the [**Glossary**](documentation/Glossary.md).
+
 
 <img width="403" height="213" alt="Sample_SCREENSHOT" src="https://github.com/user-attachments/assets/2a898708-f2a5-48ba-960b-b873d72b1afa" />
 
